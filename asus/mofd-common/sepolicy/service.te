@@ -1,0 +1,3 @@
+type cta_service, app_api_service, system_server_service, service_manager_type;
+type themes_service, app_api_service, system_server_service, service_manager_type;
+type dtshpxservice_service, app_api_service, system_server_service, service_manager_type;

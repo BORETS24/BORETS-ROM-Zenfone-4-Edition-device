@@ -1,0 +1,26 @@
+import init.bt.vendor.rc
+
+on post-fs
+    mkdir /config/bt
+    chown system bluetooth /config/bt
+    chmod 0770 /config/bt
+
+service bd_prov /system/bin/bd_prov
+    class core
+    user system
+    group system bluetooth
+    disabled
+    oneshot
+    seclabel u:r:bluetooth:s0
+
+service bdt /system/bin/bdt s
+    disabled
+    oneshot
+	
+service BrcmService /system/bin/BrcmService.sh
+    disabled
+    oneshot
+		
+service BrcmChmod /system/bin/BrcmChmod.sh
+    disabled
+    oneshot  

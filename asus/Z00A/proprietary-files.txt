@@ -1,0 +1,17 @@
+# Bluetooth
+etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
+etc/firmware/BCM4335C0_003.001.009.0105.0610_Asus_ZX551ML.hcd
+
+# Camera
+lib/hw/camera.mofd_v1.so:lib/hw/camera.vendor.mofd_v1.so
+lib/hw/m10mo/camera.m10mo.so
+
+# Firmware
+etc/firmware/FW_INFO.bin
+etc/firmware/M10MO_fw.bin
+
+# NFC
+vendor/firmware/bcm2079x-a2_firmware.ncd
+
+# Sensors
+etc/firmware/psh.bin
